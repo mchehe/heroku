@@ -1,5 +1,6 @@
 <?php
 namespace app\index\controller;
+use QL\QueryList;
 
 class Index
 {
@@ -13,8 +14,11 @@ class Index
         return 'hello,' . $name;
     }
 
-    public function mc()
+    public function ssr()
     {
-        return 'mc';
+        //采集某页面所有的图片
+       $data = QueryList::get('https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub');
+       //打印结果
+       return $data->all();
     }
 }
