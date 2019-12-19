@@ -16,9 +16,7 @@ class Index
 
     public function ssr()
     {
-        //采集某页面所有的图片
-       $data = QueryList::html('https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub');
-       //打印结果
+       $data = file_get_contents('https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub');
        return $data;
     }
 }
