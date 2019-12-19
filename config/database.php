@@ -13,15 +13,15 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '127.0.0.1',
+    'hostname'        => 'ec2-174-129-33-30.compute-1.amazonaws.com',
     // 数据库名
-    'database'        => '',
+    'database'        => 'd9n4lsssvua5ss',
     // 用户名
-    'username'        => 'root',
+    'username'        => 'mbydtsqoziblot',
     // 密码
-    'password'        => '',
+    'password'        => 'cc613d94bc97b81ff269652ead1f661d4c8ceb5f3bed6b06204b83335f05658a',
     // 端口
-    'hostport'        => '',
+    'hostport'        => '5432',
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数
